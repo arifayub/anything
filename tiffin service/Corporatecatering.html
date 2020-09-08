@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+	<head>
+		<meta name="google-site-verification" content="rwWhfbNHLbFRO7oZlLr3eC_S8gh9G2bOy-wcbra26EA" />
+						<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Corporate Catering In Mumbai</title>
+		<meta name="description" content="Yummytiffins specializes in corporate catering and school catering."/>
+		<meta name="keywords" content="corporate catering, corporate tiffin service, corporate lunch delivery, school catering, school meals, bulk orders, tiffin service in mumbai"/>
+
+		<meta name="author" content="" />
+		<meta name="viewport" content="initial-scale=1" content="maximum-scale=1" content="width=device-width" >
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="https://www.yummytiffins.com/img/favicon.ico" />
+		<link rel="apple-touch-icon" href="https://www.yummytiffins.com/img/favicon.png" />
+		<!--css-->
+		<link rel="stylesheet" href="https://www.yummytiffins.com/css/combine.css"/>
+				<link rel="stylesheet" href="https://www.yummytiffins.com/css/slick.css"/>
+		<link rel="stylesheet" href="https://www.yummytiffins.com/css/slick-theme.css"/>
+				<!--[if lt IE 9]>
+		<script src="libraries/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<script src="https://www.yummytiffins.com/js/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="https://www.yummytiffins.com/js/slick.min.js" type="text/javascript"></script>
+		<script src="https://www.yummytiffins.com/js/dial2verify.js" type="text/javascript"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129729627-1"></script>
+
+		<script>
+
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			
+			gtag('config', "UA-129729627-1");
+			
+ 		</script>
+
+	</head>
+	<body>
+		
+		<script type="text/javascript" src="https://www.yummytiffins.com/js/yummy_tiffins.php?1593877908"></script>
+		
+		<script type = "text/javascript">
+
+			var gl_weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+			var gl_months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+	
+			Date.prototype.getMonthName = function() {
+			   return gl_months[ this.getMonth() ];
+			};
+			Date.prototype.getDayName = function() {
+			   return gl_weekdays[ this.getDay() ];
+			};
+
+			Object.size = function(obj) {
+				var size = 0,
+				    key;
+				for (key in obj) {
+					if (obj.hasOwnProperty(key))
+						size++;
+				}
+				return size;
+			};
+
+			var count_cart_items = function() {
+				var cnt = 0;
+				var total_amount = 0.00;
+				for( var menu in yummy_tiffins.cart.items ) {
+					cnt = cnt + 1;
+				}
+				return cnt;
+			}
+
+			$(document).ready(function(){
+
+				if(parseInt(cart_element) > 0){
+					$('.customized').find('span').html('MY MEALS ('+cart_element+')');
+					$(".customized").show();
+				}
+				else{
+					$(".customized").hide();
+				}
+	
+				var unsetauth= {
+				tries:0,
+				max_tries:3,
+				unset_user: function() {
+					unsetauth.tries = parseInt(unsetauth.tries) + 1;
+	
+									
+					}
+				}
+	
+									$(".availbal").append("Available Balance: " + parseFloat(0.00).toFixed(2));
+	
+				
+			$(document).on('click','.logout',function(){
+	
+				if(count_cart_items() >0)
+				{
+					if(confirm('Your cart is not empty do you really want to SIGN OUT ?')){
+		
+						unsetauth.unset_user();
+					}
+				}
+				else
+				{
+					unsetauth.unset_user();
+				}
+	
+			});
+
+		});
+
+		yummy_tiffins.token= "c44aabcb4300120a00b2d046edc59ca5e69cbde0";
+		yummy_tiffins.server_url= "https://order.yummytiffins.com";
+
+					yummy_tiffins.cart = [];
+				
+		</script>
+
+		<header>
+			<div class="container hidden-xs">
+				<div class="row">
+					<div class="col-lg-3 col-sm-4">
+						<div class="logoContainer">
+							<a href="https://www.yummytiffins.com/"> <img class="img-responsive" src="https://www.yummytiffins.com/img/logo.png" /> </a>
+						</div>
+					</div>
+
+					<div class="col-lg-9 col-sm-8 text-center">
+
+						<div class="clearfix right-header">
+							<div class="pull-right">
+								<div class="clearfix commmon-row">
+									<div class=" pull-left commmon-col">
+										<span>Call Us : 9820223338</span>
+									</div>
+																		<div class="pull-left commmon-col  ">
+										<a href="https://www.yummytiffins.com/customer" class="grey-anchor "><i class="fa fa-sign-in mr5"></i><span>Sign In</span></a>
+									</div>
+																	</div>
+							</div>
+						</div>
+
+						
+					</div>
+									</div>
+			</div><!---end container--->
+
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand visible-xs" href="https://www.yummytiffins.com/" ><img src="https://www.yummytiffins.com/img/logo.png" class="img-responsive" /></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="home">
+								<a  href="index.html"><i class="fa fa-home visible-xs-disinbl "></i> <span>Home</span></a>
+							</li>
+							<li class="menu">
+								<a href=""><i class="fa fa-cutlery visible-xs-disinbl "></i> <span>Menu</span> </a>
+							</li>
+														<li class="aboutus">
+								<a  href=""><i class="fa fa-user visible-xs-disinbl "></i> About Us</a>
+							</li>
+
+							<li class="concept">
+								<a href="" class="concept"><i class="fa fa-lightbulb-o visible-xs-disinbl "></i> CONCEPT</a>
+							</li>
+							<li class="catering">
+								<a href="Corporatecatering.html" class="corporate_caterting"><i class="fa fa-university visible-xs-disinbl"></i> CORPORATE CATERING</a>
+							</li>
+							<li class="contactUs">
+								<a href="" class="contact_us"><i class="fa fa-phone visible-xs-disinbl "></i> Contact Us</a>
+							</li>
+														<li class="signup">
+								<a href="" class="Register visible-xs"><i class="fa fa-user visible-xs-disinbl"></i> <span>SIGN UP</span></a>
+							</li>
+														<li class="visible-xs login">
+								<a href=""> <i class="fa fa-sign-in"></i> <span> SIGN IN</span> </a>
+							</li>
+
+																					<li class="visible-xs">
+								<div class="user">
+
+															</ul>
+
+					</div>
+			</nav>
+
+		</header>
+
+		<div class="container dn">
+
+			<div class="alert alert-success" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button><strong>Well done!</strong> You successfully read this important alert message.
+			</div>
+			<div class="alert alert-info" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button><strong>Well done!</strong> You successfully read this important alert message.
+			</div>
+			<div class="alert alert-warning" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button><strong>Well done!</strong> You successfully read this important alert message.
+			</div>
+			<div class="alert alert-danger" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button><strong>Well done!</strong> You successfully read this important alert message.
+			</div>
+			<div class="mb30">
+				<button type="button" class="btn modal-btn" >
+					Open modal
+				</button>
+			</div>
+		</div>
+
+		<div class="modal fade mymodal" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true" id="applynow">
+			<div class="modal-dialog">
+				<form class="form-horizontal myform applynow" name="applycareer" id="applycareer" enctype="multipart/form-data">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<div class="common_sub_heading head-text">
+								APPLY NOW
+							</div>
+						</div>
+						<div class="modal-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-link model-link contact-btn" data-dismiss="modal">
+								Ok
+							</button>
+
+						</div>
+
+					</div><!-- /.modal-content -->
+				</form>
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<script type = "text/javascript">
+			//$(".customized").hide();
+			var cart_element = 0;
+
+							var cities = {};
+				var locations = {};
+				var defaultCity = '';
+				var defaultLocation = '';
+
+			
+			function getAllCities(){
+
+				$.ajax({
+					url:"https://order.yummytiffins.com/api/config/city",
+					type : "POST",
+					async : false,
+					data : {access_token:yummy_tiffins.token},
+					success:function(data){
+						cities = data.data;
+					},
+					error:function(){
+					yummy_tiffins.generateToken();
+	
+					}
+				});
+			}
+
+			function getAllLocations(city,id){
+
+				$.ajax({
+					url:"https://order.yummytiffins.com/api/config/location",
+					type : "POST",
+					async : false,
+					data : {access_token:yummy_tiffins.token,city:city},
+					beforeSend:function(){
+	
+						if(id!=null && id !=""){
+							var strHtml = '<option selected="selected" value="1"> Loading... </option>';
+							$("#"+id).html(strHtml);
+							$("#"+id).trigger('render');
+							$("#"+id).selectpicker('refresh');
+						}
+					},
+					success:function(data){
+	
+						locations = data.data;
+					},
+					error:function(){
+						yummy_tiffins.generateToken();
+	
+					},
+					complete:function(){
+	
+					}
+				});
+			}
+
+			function renderCityOptions(id){
+
+				var strHtml = '<option value="">SELECT YOUR CITY</option>';
+				$.each( cities, function( key, value ) {
+					var selected = "";
+					if(defaultCity == value.pk_city_id){
+						selected = "selected";
+					}
+					strHtml+= '<option '+selected+' value="'+value.pk_city_id+'#'+value.city+'">'+value.city+'</option>';
+				});
+				$("#"+id).html(strHtml);
+				$("#"+id).trigger('render');
+			}
+
+			function renderLocationOptions(id,menu,city_id,kitchen,location){
+				var strHtml = '<option value="">SELECT YOUR '+menu.toUpperCase()+' LOCATION</option>';
+
+				if(city_id==null){
+					city_id = defaultCity;
+				}
+
+				if(location==null){
+					location = defaultLocation;
+				}
+
+				$.each( locations, function( key, value ) {
+
+					if(city_id == value.city){
+						if(kitchen == null || kitchen == value.fk_kitchen_code){
+							var selected = "";
+							if(location == value.pk_location_code){
+								selected = "selected";
+							}
+							strHtml += '<option '+selected+' data-kitchen="'+value.fk_kitchen_code+'" value="'+value.pk_location_code+'#'+value.location+'">'+value.location+'</option>';
+						}
+					}
+				});
+				$("#"+id).html(strHtml);
+				$("#"+id).trigger('render');
+				//$("#"+id).selectpicker('refresh');
+			}
+
+			function setDefaultLocation(){
+
+				var location = $("#default_location").val();
+				var city = $("#default_city").val();
+				var kitchen = $("#default_location option:selected").data("kitchen");
+
+				$.ajax({
+					url:"https://www.yummytiffins.comwelcome/setdefaultlocation",
+					type : "POST",
+					async : false,
+					dataType : 'json',
+					data : {location:location,city:city,kitchen:kitchen},
+					success:function(data){
+						if(data.status=='success'){
+							$("#default_location_modal").modal('hide');
+						}
+					},
+					error:function(){
+						yummy_tiffins.generateToken();
+					}
+				});
+			}
+
+		</script>
+		<div class="container ctr">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="about-head">Bulk Orders</h1>
+					<p class="para">
+						“Join the movement of good health”
+					</p>
+					<div class="row corporate">
+						<div class="col-sm-4">
+							<img src="https://www.yummytiffins.com/img/bday.jpg" class="img-responsive"/>
+							<span>BIRTHDAY PARTY</span>
+						</div>
+						<div class="col-sm-4">
+							<img src="https://www.yummytiffins.com/img/corporat.jpg" class="img-responsive"/>
+							<span>CORPORATE MEETING</span>
+						</div>
+						<div class="col-sm-4">
+							<img src="https://www.yummytiffins.com/img/boardroom.jpg" class="img-responsive"/>
+							<span>BOARDROOM LUNCH</span>
+						</div>
+						<div class="ptb15"></div>
+	
+						<div class="col-sm-4">
+							<img src="https://www.yummytiffins.com/img/tri.jpg" class="img-responsive"/>
+							<span>FIELD TRIPS</span>
+						</div>
+						<div class="col-sm-4">
+							<img src="https://www.yummytiffins.com/img/party.jpg" class="img-responsive"/>
+							<span>PARTY CATERING</span>
+						</div>
+						<div class="col-sm-4">
+							<img src="https://www.yummytiffins.com/img/event.jpg" class="img-responsive"/>
+							<span>EVENT CATERING</span>
+						</div>
+						
+					</div>
+					<div class="ptb15"></div>
+					<p class="para">
+						Thai. Chinese. Mexican. And of course, Indian. What if you could enjoy such daily feast of flavours sprinkled with just the right amount of nutrition? The lip-smacking goodness of that thought is exactly what Yummy Tiffins has to offer: a wide variety of meals with a distinct tadka of flavour.
+					</p>
+					<p class="para">
+						We, at Yummy Tiffins, cater to all kinds of tastes and appetites. We understand the importance of a healthy diet for professionals who work long hours every day. Hence, it has a dedicated corporate catering team committed to providing healthy and hygienic meals to organizations with on-time service. A perfect selection of fresh and vibrant items is offered on the menu, specially prepared with quality ingredients. 
+					</p>
+					<ul class="para">
+						Special Features of corporate tiffin service
+						
+							<li>1. A lavish gourmet buffet is offered to organizations for nutritious breakfast, sumptuous lunch, wholesome snacks and delightful dinner. </li>
+							<li>2. Executive trays are specially designed for conference meetings, exhibitions or even for travellers. </li>
+						</ul>
+										
+					<p class="para ">
+						Get in touch with us on <span class="color">7738256735 </span>for corporate food delivery service in Mumbai and our Sales Team on board will understand your requirements and assist you with a brief presentation. Let’s get talking about your next corporate meal...
+					</p>
+				</div>
+				
+			</div>
+			
+			
+		</div><div class="footer">
+	
+<footer class="">
+	<div class="footerContainer">
+		<div class="container top_container">
+			<div class="row">
+				<div class="col-sm-6 col footer_links">
+					<a class="fb press" href="https://www.yummytiffins.com/welcome/pressrelease">Press Release</i></a>
+					<a class="twt terms_conditions"  href="https://www.yummytiffins.com/welcome/termsncondition">Terms & Conditions</i></a>
+					<a class="twt privacy_policy"  href="https://www.yummytiffins.com/welcome/privacy_policy">Privacy Policy</i>
+					<a class="twt faqs"  href="https://www.yummytiffins.com/welcome/faqs">FAQs</i></a>
+					
+				</div>
+				<div class="col-sm-6 col">
+					<div class="social_links right">
+						Follow us on:
+						<a class="fb" href="https://www.facebook.com/pages/Yummy-Tiffins/107605889277954" target="_blank"><i class="fa fa-facebook-official"></i></a>
+						<a class="twt" href="https://twitter.com/ytiffins" target="_blank"><i class="fa fa-twitter-square"></i></a>
+						<a class="in" href="#"><i class="fa fa-linkedin-square"></i></a>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col">
+					<span class="copyright"> &copy; 2020, All rights reserved - Greendaz Food and wellness Private Limited. </span>
+				</div>
+
+				<div class="col-sm-6 col">
+					<div class="right footer_links">
+						Powered By :
+						<a href="http://www.fooddialer.com" target="_blank">
+							<img src="https://www.yummytiffins.com/img/powerByfooddialer.png">
+						</a>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+<script src="https://www.yummytiffins.com/js/combined.js" type="text/javascript"></script>
+<script src="https://www.yummytiffins.com/js/myscript.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	// show green line below the selected menu item
+	var menuLinks = ["home","aboutus","menu","concept","catering","contactUs","signup","customized","fixed","monthly","myaccount","order_history","cart"];
+	var href =  window.location.href;
+	var pathname =  window.location.pathname;
+	//var selected_page = href.substr(href.lastIndexOf('/') + 1);
+	var selected_page = pathname.substr(pathname.lastIndexOf('/') + 1);
+	
+	if(selected_page){
+		if($.inArray(selected_page, menuLinks) !== -1){
+
+			if(selected_page=='customized' || selected_page=='fixed' || selected_page=='monthly'){
+				$('.menu').addClass('active');
+			}else{
+				$('.'+selected_page).addClass('active');
+			}
+		}
+	}else{
+		selected_page = "home";
+		$('.'+selected_page).addClass('active');
+	}
+});
+</script>
